@@ -1,0 +1,14 @@
+body {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+body nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body main section {
+  text-align: center;
+}
+body main section svg {
+  max-height: 85vh;
+}/*# sourceMappingURL=index.css.map */
