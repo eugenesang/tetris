@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Navbar from './components/Navbar';
+import Container from './components/Container';
 
 function App() {
+
+  const [score, setScore] = useState(234343);
+  const [nextShape, setNextShape] = useState(0);
+  const rows = 32;
+  const columns = 24;
+  const gap = 10;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar score={score} nextShape={nextShape} />
+      <Container rows={rows} columns={columns} gap={gap}  />
     </div>
   );
 }
