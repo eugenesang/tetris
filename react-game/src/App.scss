@@ -1,0 +1,38 @@
+.App{
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: rgb(211, 211, 211);
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        
+
+
+        img{
+            height: 30px;
+        }
+
+        .score-counter{
+            color: rgb(0, 115, 255);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            padding: 2px 4px;
+            border: .5px solid gray;
+        }
+    }
+
+    .svg-container{
+        height: 70vh;
+        width: fit-content;
+        margin: 5px auto;
+        margin-top: 25px;
+
+        svg{
+            height: 75vh;
+        }
+    }
+}
